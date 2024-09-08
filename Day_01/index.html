@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>VertexForm</title>
+  </head>
+  <body>
+    <main>
+      <figure>
+        <img
+          class="background"
+          src="./assets/background.jpg"
+          alt="architecturePicture"
+        />
+        <img class="logo" src="./assets/logo2.png" alt="Logo" />
+        <figcaption>
+          Photo by
+          <a href="https://unsplash.com/es/@drewpatrickmiller"
+            >drewpatrickmiller</a
+          >
+          on
+          <a
+            href="https://unsplash.com/es/fotos/techo-de-vidrio-transparente-VLT62-JzddA"
+            >Unsplash</a
+          >
+        </figcaption>
+      </figure>
+
+      <section>
+        <p class="disclaimer">
+          This is not a real online service! You know you need something
+          like this in your life to help you realize your deepest dreams.
+          Sign up now to get started.
+        </p>
+        <p class="disclaimer">You know you want to.</p>
+        <form action="">
+
+          <div class="formContainer">
+            <p class="message">Let's do this!</p>
+            <fieldset>
+              
+              <p>
+                <label for="first-name">FIRST NAME</label><br>
+                <input type="text" name="firstName" id="first-name" />
+              </p>
+              <p>
+                <label for="last-name">LAST NAME</label><br>
+                <input type="text" name="lastName" id="last-name" />
+              </p>
+              <p>
+                <label for="email">EMAIL</label><br>
+                <input type="email" name="email" id="email" />
+              </p>
+              <p>
+                <label for="phone">PHONE</label><br>
+                <input type="tel" name="phone" id="phone" />
+              </p>
+              <p>
+                <label for="password">PASSWORD</label><br>
+                <input type="password" name="password" id="password" />
+              </p>
+              <p>
+                <label for="passwordConf">CONFIRM PASSWORD</label><br>
+                <input type="password" name="password" id="passwordConf" />
+              </p>
+            </fieldset>
+          </div>
+
+          <input class="button" type="submit" value="Create Account" />
+        
+        </form>
+        <p>Already have an account? <a href="">Log in</a></p>
+      </section>
+    </main>
+  </body>
+</html>

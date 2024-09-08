@@ -1,0 +1,110 @@
+/* Restablecimiento básico de márgenes y rellenos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #d6d6d6;
+  --secondary-color: #949494;
+  --hover-color: #5a5a5a;
+}
+
+/* Tipografía predeterminada */
+body {
+  font-family: "Arial", sans-serif;
+  /* line-height: 1.6; */
+  background-color: var(--secondary-color);
+  /* #D6D6D6 #949494*/
+}
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+figure {
+  position: relative;
+}
+img.background {
+  display: block;
+  height: 100vh;
+  width: auto;
+  object-fit: cover;
+}
+.logo {
+  position: absolute;
+  width: 80%;
+  height: auto;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+figcaption {
+  position: absolute;
+  color: black;
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+}
+
+section {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.disclaimer {
+  font-weight: bold;
+  font-size: large;
+}
+/* Estilo básico para encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
+}
+
+/* Enlaces */
+a {
+  color: #353535;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Botón básico */
+.button {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 8px 35px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--hover-color);
+}
+
+.formContainer{
+  background-color: var(--primary-color);
+}
+
+fieldset{
+  border: none;
+  display:flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.message{
+  font-weight: bold;
+  font-size: large;
+  color: var(--hover-color);
+}
