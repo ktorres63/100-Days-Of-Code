@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>VertexForm</title>
+  </head>
+  <body>
+    <main>
+      <figure>
+        <img
+          class="background"
+          src="./assets/background.jpg"
+          alt="architecturePicture"
+        />
+        <img class="logo" src="./assets/logo2.png" alt="Logo" />
+        <figcaption>
+          Photo by
+          <a href="https://unsplash.com/es/@drewpatrickmiller"
+            >drewpatrickmiller</a
+          >
+          on
+          <a
+            href="https://unsplash.com/es/fotos/techo-de-vidrio-transparente-VLT62-JzddA"
+            >Unsplash</a
+          >
+        </figcaption>
+      </figure>
+
+      <section>
+        <p class="disclaimer">
+          Discover the latest trends and designs that are transforming the world
+          of architecture. Subscribe and stay ahead of the curve!
+        </p>
+        <p class="disclaimer">You know you want to.</p>
+        <form action="">
+          <div class="formContainer">
+            <p class="message">Let's do this!</p>
+            <fieldset>
+              <div class="rowForm">
+                <div class="formElem">
+                  <label for="first-name">FIRST NAME</label>
+                  <input type="text" name="firstName" id="first-name" />
+                </div>
+                <div class="formElem">
+                  <label for="last-name">LAST NAME</label>
+                  <input type="text" name="lastName" id="last-name" />
+                </div>
+              </div>
+
+              <div class="rowForm">
+                <div class="formElem">
+                  <label for="email">EMAIL</label>
+                  <input type="email" name="email" id="email" />
+                </div>
+                <div class="formElem">
+                  <label for="phone">PHONE</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    pattern="\d{9}"
+                   
+                  />
+                </div>
+              </div>
+
+              <div class="rowForm">
+                <div class="formElem">
+                  <label for="password">PASSWORD</label>
+                  <input type="password" name="password" id="password" pattern=".{8,}"/>
+                </div>
+                <div class="formElem">
+                  <label for="passwordConf">CONFIRM PASSWORD</label>
+                  <input type="password" name="password" id="passwordConf" pattern=".{8,}" />
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <button class="button" type="submit">Create Account</button>
+        </form>
+        <p class="loginMessage">
+          Already have an account? <a href="">Log in</a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

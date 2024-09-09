@@ -1,0 +1,157 @@
+/* Restablecimiento básico de márgenes y rellenos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #d6d6d6;
+  --secondary-color: #949494;
+  --hover-color: #5a5a5a;
+}
+
+/* Tipografía predeterminada */
+body {
+  font-family: "Arial", sans-serif;
+  /* line-height: 1.6; */
+  background-color: var(--primary-color);
+  /* #D6D6D6 #949494*/
+}
+main {
+  display: flex;
+  flex-direction: row;
+  /* gap: 1rem; */
+}
+figure {
+  position: relative;
+}
+img.background {
+  display: block;
+  height: 100vh;
+  width: auto;
+  object-fit: cover;
+}
+.logo {
+  position: absolute;
+  width: 80%;
+  height: auto;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+figcaption {
+  position: absolute;
+  color: black;
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+}
+
+section {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.disclaimer {
+  font-weight: bold;
+  font-size: large;
+
+  padding: 0 10px 10px 20px;
+}
+/* Estilo básico para encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
+}
+
+/* Enlaces */
+a {
+  color: #353535;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+/* Botón básico */
+.button {
+  display: block;
+  background-color: var(--primary-color);
+  color: black;
+  padding: 12px 35px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: var(--hover-color);
+  color: var(--primary-color);
+}
+
+.formContainer {
+  background-color: var(--primary-color);
+  padding: 20px;
+  box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+fieldset {
+  border: none;
+}
+.message {
+  font-weight: bold;
+  font-size: large;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.rowForm {
+  display: flex;
+  gap: 5rem;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.formElem {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-weight: bold;
+  font-size: small;
+}
+.loginMessage {
+  padding-left: 20px;
+  margin-top: 12px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  outline: none;
+  padding: 5px;
+  height: 30px;
+  width: 18rem;
+  border-radius: 5px;
+  border-color: #E5E7EB; 
+}
+input:focus {
+  border-color: #4077ad;
+  box-shadow: 0 0 5px rgba(103, 148, 192, 0.5);
+}
+
+input:invalid {
+  border-color: rgb(255, 115, 115);
+}
