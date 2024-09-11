@@ -1,4 +1,4 @@
-.container {
+.container00 {
   display: grid;
   /* grid-template-columns: 250px 50px 100px;
   grid-template-rows: 150px 160px 50px  */
@@ -28,7 +28,8 @@
 }
 .container4 {
   background-color: olive;
-  display: grid;
+  /* display: grid; */
+  display: none;
   grid-template-columns: 150px 150px 150px 150px;
   grid-template-rows: 150px 150px 150px 150px;
   grid-template-areas:
@@ -40,6 +41,26 @@
   /* align-item justify-items */
   /* place-items: center stretch; */
 
-   justify-content: space-evenly; 
-   align-content: end;
+  justify-content: space-evenly;
+  align-content: end;
+}
+
+.container {
+  display: inline-grid;
+  grid-template: 40px 40px 40px 40px 40px / 40px 40px 40px 40px 40px;
+  background-color: lightblue;
+}
+
+.room{
+    border: 1px solid;
+    font-size: 50%;
+    text-align: center;
+}
+#living-room{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#kitchen{
+    grid-column-start: 3;
+    grid-column-end: 6;
 }
