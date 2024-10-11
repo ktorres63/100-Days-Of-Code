@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #aac7ff;
+  --secondary-color: #bec6dc;
+  --tertiary-color: #ddbce0;
+  --error: #ffb4ab;
+  --error-container: #93000a;
+  --primary-container: #284777;
+  --secondary-container: #3e4759;
+  --tertiary-container: #573e5c;
+  --surface: #12140d;
+}
+body {
+  background-color: var(--surface);
+  font-family: "Abhaya Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--secondary-color);
+  height: 100vh;
+}
+main {
+  padding: 2rem 5rem;
+}
+
+header {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+h1 {
+  font-family: "Aclonica", serif;
+  color: var(--primary-color);
+}
+button {
+  border: none;
+  width: 10rem;
+  border-radius: 1rem;
+  background-color: var(--secondary-container);
+  color: var(--secondary-color);
+  font-family: "Abhaya Libre", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: medium;
+}
+#openDialogBtn{
+  border: 1px solid var(--secondary-color);
+}
+button:hover {
+  background-color: var(--primary-container);
+  color: var(--primary-color);
+}
+button:active {
+  transform: translateY(-5px);
+}
+#libraryGrid,
+#libraryHeaders {
+  display: grid;
+  grid-template-columns: 2fr 2fr repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.grid-header {
+  font-weight: bold;
+  background-color: var(--primary-container);
+  color: var(--primary-color);
+  height: 3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.grid-item {
+  /* border: 1px solid #ddd; */
+  background-color: var(--secondary-container);
+  color: var(--secondary-color);
+  border-radius: 0.5rem;
+  height: 2.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+dialog {
+  padding: 2rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  background-color: var(--secondary-container);
+  color: var(--secondary-color);
+}
+h2 {
+  font-family: "Aclonica", serif;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+#addBookForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#addBookForm label {
+  font-weight: bolder;
+}
+input[type="text"],
+input[type="number"] {
+  height: 2rem;
+  border-radius: 0.5rem;
+  padding: 5px;
+  background-color: var(--tertiary-container);
+  color: var(--tertiary-color);
+  font-weight: bold;
+}
+
+.dialog-buttons{
+  display: flex;
+  gap: 1rem;
+
+}
+.dialog-buttons button{
+  /* background-color: var(--primary-container); */
+  border: 1px solid var(--secondary-color);
+  width: 9rem;
+  height: 2rem;
+}
+#closeDialogBtn:hover{
+  background-color: var(--error-container);
+}
+
+
+.btnsContainer{
+  display: flex;
+  gap:1rem;
+}
+.btnsContainer button{
+  width: fit-content;
+}

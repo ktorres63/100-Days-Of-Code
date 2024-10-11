@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Vortex Library</title>
+  </head>
+  <body>
+    <header>
+      <h1>Vortex Library</h1>
+      <button id="openDialogBtn">New Book</button>
+    </header>
+    <main>
+      <dialog  id="bookDialog">
+        <h2>New Book</h2>
+        <form action="" id="addBookForm">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" required />
+
+          <label for="author">Author:</label>
+          <input type="text" id="author" name="author" required />
+
+          <label for="pages">Pages:</label>
+          <input type="number" id="pages" name="pages" required />
+
+          <div>
+            <label for="isRead">Read: </label>
+            <input type="checkbox" id="isRead" name="isRead" />
+          </div>
+
+          <div class="dialog-buttons">
+            <button type="button" id="closeDialogBtn">Cancel</button>
+            <button type="submit" id="submitBtn">Save</button>
+          </div>
+        </form>
+      </dialog>
+
+      <div id="libraryHeaders">
+        <div class="grid-header">Title</div>
+        <div class="grid-header">Author</div>
+        <div class="grid-header">Pages</div>
+        <div class="grid-header">Read</div>
+        <div class="grid-header">Actions</div>
+
+      </div>
+      <div id="libraryGrid"></div>
+    </main>
+  </body>
+</html>
