@@ -1,8 +1,7 @@
-const age = 100;
-
-function go(){
-  const hair = "blonde";
-  console.log(hair);
-  console.log(age);
+function sayHi(name) {
+  function yell() {
+    console.log(name.toUpperCase());
+  }
+  yell();
 }
-go();
+yell();
