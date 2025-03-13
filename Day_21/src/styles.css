@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/background.png"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.5); 
+  z-index: -1; 
+}
+
+nav{
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%); 
+  display:flex;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  width: 12rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+/* Home */
+.discover{
+  font-size: 3rem;
+  color: #FACE8D;
+  font-family: "Tangerine", cursive;
+  font-style: normal;
+  position: relative;
+  top: 70px;
+}
+
+.restName{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: white;
+  font-size: 10rem;
+  font-weight: 500;
+}
+
+.contentHome{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Menu */
+.contentMenu{
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  border-radius: 1rem;
+}
+
+
+.nameSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paragraph1{
+  font-size: 2.5rem;
+  color: #FACE8D;
+  font-family: "Tangerine", cursive;
+  font-style: normal;
+}
+
+.paragraph2{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: white;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.contentHome{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
