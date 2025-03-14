@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/background.png"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.5); 
+  z-index: -1; 
+}
+
+nav{
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%); 
+  display:flex;
+  height: 2.5rem;
+  width: 14rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+button{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  border-radius:1rem;
+  padding: 10px;
+  border: none;
+  background-color: white;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+/* Home */
+.discover{
+  font-size: 3rem;
+  color: #FACE8D;
+  font-family: "Tangerine", cursive;
+  font-style: normal;
+  position: relative;
+  top: 70px;
+}
+
+.restName{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: white;
+  font-size: 10rem;
+  font-weight: 500;
+}
+
+.contentHome{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Menu */
+.contentMenu{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.mealsName{
+  margin-top: 20px;
+  font-size: 3rem;
+  color: #FACE8D;
+  font-family: "Tangerine", cursive;
+  font-weight: bold;
+}
+
+.dish{
+  display:grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: repeat(2,1fr) ;
+  gap: 5px;
+  width: 40rem;
+}
+.dishImage{
+  grid-row: span 2;
+  justify-self: center;
+  align-self: self-end;
+  height: 80px;
+  width: 100px;
+
+}
+.dishName{
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: bold;
+  align-self: self-end;
+
+}
+.dishDescription{
+  grid-column: 2/3;
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+
+}
+
+.dishPrice{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: bold;
+  grid-row-start: 1;
+  grid-column-start: 3;
+  align-self: self-end;
+  color:white;
+}
+
+/* Contact */
+.contentContact{
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  /* background-color: black; */
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 40rem;
+}
+.textAboutUs{
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.imgArch{
+  width:96%;
+  align-self: center;
+}
