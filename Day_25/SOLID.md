@@ -32,3 +32,13 @@ En otras palabras, una interfaz debe ser específica para cada caso de uso y no 
 En lugar de usar herencia y obligar a todas las clases a implementar métodos innecesarios, usamos composición para asignar solo las funcionalidades necesarias. ¡Más modular, flexible y limpio! 🚀
 
 ** Revisa como usa composicion js **
+
+## Dependency Inversion 
+
+"Los módulos de alto nivel no deben depender de los módulos de bajo nivel. Ambos deben depender de abstracciones."
+
+"Las abstracciones no deben depender de los detalles. Los detalles deben depender de las abstracciones."
+
+**💡 En términos simples**: En lugar de que una clase dependa directamente de otra clase concreta, ambas deben depender de una interfaz o abstracción.
+
+
