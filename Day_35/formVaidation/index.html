@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <h2>Registration Form</h2>
+    <form id="myForm" novalidate>
+      <div class="form-group">
+        <label>Email:</label>
+        <input type="email" id="email" required />
+        <div class="error-message" id="emailError">
+          Please enter a valid email.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Country:</label>
+        <input type="text" id="country" required />
+        <div class="error-message" id="countryError">Country is required.</div>
+      </div>
+
+      <div class="form-group">
+        <label>Postal Code:</label>
+        <input type="text" id="postal" required />
+        <div class="error-message" id="postalError">
+          Enter a valid postal code (e.g., 12345).
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Password:</label>
+        <input type="password" id="password" required />
+        <div class="error-message" id="passwordError">
+          Password must be at least 6 characters.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Confirm Password:</label>
+        <input type="password" id="confirmPassword" required />
+        <div class="error-message" id="confirmError">
+          Passwords do not match.
+        </div>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
