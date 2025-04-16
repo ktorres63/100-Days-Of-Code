@@ -41,11 +41,15 @@
     border: 2px solid #ccc;
     border-radius: 4px;
   }
-  input.invalid {
+
+  input:invalid {
     border-color: red;
+    border-style: dashed;
   }
-  input.valid {
+  input:valid {
     border-color: green;
+    border-style: dashed;
+
   }
   .error-message {
     color: red;
