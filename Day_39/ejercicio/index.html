@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <input type="text" id="search" placeholder="Search for gifs..." />
+    <button id="btn-image">Search</button>
+    <div id="message"></div>
+    <img src="#" alt="Random gif" />
+
+    <script>
+      const img = document.querySelector("img");
+      const btn = document.getElementById("btn-image");
+      const searchInput = document.getElementById("search");
+      const message = document.getElementById("message")
+
+
+      function fetchImage(searchTerm ="cats") {
+        fetch(
+          `https://api.giphy.com/v1/gifs/translate?api_key=BapDgnMEcJTNGpSKQdVZH6CVX4rPHuYP&s=${encodeURIComponent(searchTerm)}`,
+          { mode: "cors" }
+        )
+          .then((response) => response.json())
+          .then((response) => {
+            if(response.data && response.data.images){
+              console.log(response.data);
+              img.src = response.data.images.original.url;
+              message.textContent = ""
+            }
+            else{
+              message.textContent = "no results"
+            }
+          })
+          .catch((error) => {
+            console.error("Error fetching the image:", error);
+            message.textContent = "An error occurred. Please try again.";
+          });
+      }
+
+      fetchImage(); // carga inicial
+      btn.addEventListener("click", () => {
+        const searchTerm = searchInput.value.trim();
+        if(searchTerm){
+          fetchImage(searchTerm);
+        }
+        else{
+          message.textContent ="enter a search term"
+        }
+      }); // al dar click
+    </script>
+  </body>
+</html>
